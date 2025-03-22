@@ -1,4 +1,4 @@
-import Cadastro from "./assets/components/Cadastro"
+import Cadastro from "./components/Cadastro"
 
 
 function App() {
