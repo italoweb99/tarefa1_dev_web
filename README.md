@@ -1,55 +1,38 @@
-# React + TypeScript + Vite
+# Tarefa 1 Desenvolvimento Web
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Essa aplicação consiste da primeira tarefa da matéria de Desenvolvimento Web do curso de Engenharia de Software do Centro Universitário Municipal de Franca, e consiste na realização de uma aplicação que contenha uma lista
+de tarefas e armazene no local storage do navegador e as mostre conforme o necessário. Além disso a aplicação deve ser capaz de receber o nome do usuário e apresentar uma mensagem de boas vindas e ser capaz de mudar a cor do plano do fundo conforme a seleção do usuário.
 
-Currently, two official plugins are available:
+![Image](https://github.com/user-attachments/assets/e0ff5d03-142d-4ef7-bf22-bf99b0500336)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Instalação
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+Clone o repositório e instale as dependências
 ```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+git clone https://github.com/italoweb99/tarefa1_dev_web.git
+cd tarefa1_dev_web
+npm install
 ```
-# tarefa1_dev_web
+## Uso
+
+### Inserir nome de usuario
+
+Insira o nome de usuario a ser usado na seção quando a janela pop-up aparecer
+
+![Image](https://github.com/user-attachments/assets/fa59e75a-4b85-4fd8-97c7-12ddf71741fb)
+
+### Adicionar Itens à lista
+
+Escreva a tarefa no espaço indicado a clique enviar e o item será adicionado à sua lista de tarefas
+
+![Image](https://github.com/user-attachments/assets/e0ff5d03-142d-4ef7-bf22-bf99b0500336)
+
+A tarefa será salva no localstorage do seu navegador, então mesmo que você fechar o navegador suas tarefas continuarão salvas
+
+![Image](https://github.com/user-attachments/assets/6a643e02-c550-4f2e-a1fc-b46928fb4900)
+
+### Trocar a cor da página
+
+Para trocar a cor da página selecione o botão com a cor desejada
+
+![Image](https://github.com/user-attachments/assets/4935a4bb-72cf-498c-ba21-02dd2a3395d3)
